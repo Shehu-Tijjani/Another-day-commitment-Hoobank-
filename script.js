@@ -88,7 +88,7 @@ const navScrollerFunc = function (e) {
   console.log(id);
   document
     .querySelector(`#${id}`)
-    .scrollIntoView({ behavior: "smooth", block: "start" });
+    .scrollIntoView({ behavior: "smooth", block: "center" });
 };
 
 navLists.forEach((li) => li.addEventListener("click", navScrollerFunc));
